@@ -5,5 +5,6 @@
 
 ```
 make
-./app imagen 1080 1080 black blue 500 500 15 200 50
+./main imagen 
+./main imagen 10 10
 ```

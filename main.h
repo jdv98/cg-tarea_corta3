@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+#include <time.h>
 #include <MagickWand/MagickWand.h>
 
 #define ThrowWandException(wand) \
@@ -20,5 +21,11 @@
   description=(char *) MagickRelinquishMemory(description); \
   exit(-1); \
 }
+
+typedef struct {
+  double r;
+  double g;
+  double b;
+} COLOR;
 
 #endif
